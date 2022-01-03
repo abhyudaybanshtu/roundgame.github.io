@@ -1,0 +1,116 @@
+
+#image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50em;
+}
+img{
+    width: 40vw;
+    height: auto;
+    margin-top: 20px;
+    box-shadow: 0px 0px 5px 4px black;
+}
+h2{
+    margin-left: 40%;
+    font-size: 40px;
+    text-shadow: 0px 0px 5px  white;
+    
+}
+#outer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+h1{
+    color: black;
+    font-size: 50px;
+}
+body{
+    background-image: url("https://i.pinimg.com/originals/7e/34/d2/7e34d205d6c241e22f9f630f6c04235a.jpg" );
+    background-size:cover;/* 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;  */
+    background-repeat:no-repeat;
+}
+/* align items does in opposite axis */
+#form{
+    border: solid 5px rgba(255, 255, 255, 0.384);
+    width: 45vw;
+    height: 100vh;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.384);
+    box-shadow: 3px -3px 3px 1px rgba(54, 54, 54, 0.514);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#btn{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: center;
+}
+button{
+    margin: 0% 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-size: 20px;
+}
+button:nth-last-of-type(2),button:nth-last-of-type(3){
+    background-color: rgba(85, 85, 85, 0.103);
+    padding: 5px 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.603);
+    color: rgb(32, 32, 32);
+    transition: background-color 0.5s,box-shadow 0.5s;
+}
+button:nth-last-of-type(1){
+    padding: 5px 10px;
+    border: solid 3px rgba(3, 3, 3, 0.925);
+    background-color: rgba(0, 0, 0, 0);
+    letter-spacing: 1px;
+}
+select{
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px 8px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 10px;
+    
+}
+button:nth-last-of-type(2):hover,button:nth-last-of-type(3):hover{
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    border: solid 2px black;
+    position: relative;
+    left: 2px;
+    top: 2px;
+}
+@media(max-width:850px){
+    #form{
+         width: 100%;
+         height: 100vh;
+         box-shadow: none;
+    } 
+    #btn{
+        flex-direction: column;
+        align-items: center;
+        margin-top:5px;
+    }
+    button{
+        margin: 5px;
+    }
+    img{
+        width: 80vw;
+    }
+    h1{
+        margin: 0px;
+    }
+ }
